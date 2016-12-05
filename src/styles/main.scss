@@ -1,0 +1,148 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Karla', sans-serif;
+	color: #293e6a;
+	text-align:center;
+}
+body{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: #e6af4b;
+}
+/*Quote Page*/
+.content{
+	display: flex;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+.nav-bar{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	background-color: #e05038;
+}
+.nav-links{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 85%;
+}
+.nav-links a {
+	list-style: none;
+	flex-grow: 1;
+	font-size: 2em;
+	margin-top: 5px;
+	background-color: #e05038;
+	margin: 3px 3px;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	transition-property: font-size, color;
+	transition-duration: 0.50s;
+	transition-timing-function: linear; 
+}
+.nav-links a:hover{
+	font-size: 2.3em;
+	color: #334431;
+}
+.selected{
+	color: #334431;
+	border-bottom: 5px solid #334431;
+}
+.quote-container{
+	width: 95%;
+	text-align: center;
+	margin: 70px auto;
+	background-color: white;
+	border-radius: 3px;
+}
+.quote p{
+	font-size: 1.2em;
+	padding: 20px;
+	font-weight: bolder;
+}
+.quote span{
+	font-size: 1em;
+	width: 100%;
+	font-weight: bold;
+	font-style: italic;
+}
+.buttons{
+	display: flex;
+	flex-direction: row;
+	margin-top: 15px;
+}
+.buttons button{
+	width: 50%;
+	border: 0;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+.buttons button:focus{
+	outline: none;
+}
+.left{
+	border-bottom-left-radius: 3px;
+	background-color: #e05038;
+}
+.right{
+	border-bottom-right-radius: 3px;
+	background-color: #334431;
+}
+footer {
+	clear: both;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+}
+footer p{
+	margin: 0;
+	color: white;
+}
+footer a:link{
+	text-decoration: none;
+	color: #334431;
+	font-size: 1.3em;
+	font-weight: bolder;
+}
+footer a:visited{
+	color: #334431;
+	text-decoration: none;
+	font-weight: bolder;
+}
+/********************** Responsive Design  **********************/
+@media only screen and (min-width: 550px) {
+	.nav-links{
+		width: 90%;
+	}	
+	.quote-container{
+		margin-top: 100px;
+		width: 75%;
+	}	
+	.quote p{
+		padding: 50px;
+		font-size: 1.4em;
+	}
+	.buttons button{
+		height: 60px;
+	}
+}
+@media only screen and (min-width: 1080px) {
+	.nav-bar{
+		height: 65px;
+	}
+	.nav-links a {
+		margin: 3px 3px;
+	}
+	.quote-container{
+		width: 50%;
+	}
+
+}
