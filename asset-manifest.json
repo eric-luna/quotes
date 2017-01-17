@@ -1,14 +1,13 @@
 {
   "main.css": "static/css/main.abeb6933.css",
   "main.css.map": "static/css/main.abeb6933.css.map",
-  "main.js": "static/js/main.6fc7f46a.js",
-  "main.js.map": "static/js/main.6fc7f46a.js.map",
-  "static\\media\\books.jpg": "static/media/books.5f573630.jpg",
-  "static\\media\\funny.jpg": "static/media/funny.211729ff.jpg",
-  "static\\media\\life.jpg": "static/media/life.0cd0b3f6.jpg",
-  "static\\media\\movies.jpg": "static/media/movies.098d2daf.jpg",
-  "static\\media\\music.jpg": "static/media/music.48aa538d.jpg",
-  "static\\media\\science.jpg": "static/media/science.1b5a4736.jpg",
-  "static\\media\\sports.jpg": "static/media/sports.64bac906.jpg",
-  "static\\media\\success.jpg": "static/media/success.9ebd7bce.jpg"
+  "main.js": "static/js/main.6de8ae5d.js",
+  "main.js.map": "static/js/main.6de8ae5d.js.map",
+  "static\\media\\books.jpg": "static/media/books.fd76ccd4.jpg",
+  "static\\media\\funny.jpg": "static/media/funny.8532e1f5.jpg",
+  "static\\media\\life.jpg": "static/media/life.6cb056b0.jpg",
+  "static\\media\\movies.jpg": "static/media/movies.67f92070.jpg",
+  "static\\media\\science.jpg": "static/media/science.518bfd1f.jpg",
+  "static\\media\\sports.jpg": "static/media/sports.12d581b7.jpg",
+  "static\\media\\success.jpg": "static/media/success.1dd285bc.jpg"
 }
