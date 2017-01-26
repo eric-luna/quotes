@@ -1,15 +1,70 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif;
-  color: #293e6a;
+  color: #373737;
   text-align: center; }
 
 body {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #e6af4b; }
+  background-color: #d9d9d9; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+/*Home Page Styles*/
+.header {
+  font-weight: bolder;
+  font-size: 3em;
+  margin: 0; }
+
+.subtitle {
+  font-size: 1.25em; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 3px; }
+
+.container a {
+  margin: 5px;
+  width: 95%;
+  margin: 10px auto;
+  text-decoration: none;
+  background-color: #373737;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 1.2em;
+  color: #fff;
+  transition-property: width;
+  transition-duration: .15s;
+  transition-timing-function: linear; }
+
+.container a img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer; }
+
+.container a p {
+  margin: 7px auto; }
 
 /*Quote Page*/
 .content {
@@ -25,7 +80,8 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  background-color: #e05038; }
+  background-color: #e05038;
+  background-color: #fff; }
 
 .nav-links {
   display: flex;
@@ -36,31 +92,30 @@ body {
 .nav-links a {
   list-style: none;
   flex-grow: 1;
-  font-size: 2em;
+  font-size: 1.75em;
   margin-top: 5px;
-  background-color: #e05038;
+  background-color: #fff;
   margin: 3px 3px;
-  color: white;
+  color: #373737;
   cursor: pointer;
   text-decoration: none;
   transition-property: font-size, color;
-  transition-duration: 0.50s;
+  transition-duration: 0.15s;
   transition-timing-function: linear; }
 
 .nav-links a:hover {
-  font-size: 2.3em;
-  color: #334431; }
+  font-size: 2em; }
 
 .selected {
-  color: #334431;
-  border-bottom: 5px solid #334431; }
+  border-bottom: 5px solid #373737; }
 
 .quote-container {
   width: 95%;
   text-align: center;
   margin: 70px auto;
-  background-color: white;
-  border-radius: 3px; }
+  background-color: #fff;
+  border-radius: 3px;
+  border: 3px solid #373737; }
 
 .quote p {
   font-size: 1.2em;
@@ -76,12 +131,12 @@ body {
 .buttons {
   display: flex;
   flex-direction: row;
-  margin-top: 15px; }
+  margin-top: 15px;
+  border-top: 3px solid black; }
 
 .buttons button {
   width: 50%;
   border: 0;
-  color: white;
   padding: 10px;
   cursor: pointer; }
 
@@ -89,27 +144,30 @@ body {
   outline: none; }
 
 .left {
-  border-bottom-left-radius: 3px;
-  background-color: #e05038; }
+  background-color: #373737;
+  color: #fff; }
 
 .right {
-  border-bottom-right-radius: 3px;
-  background-color: #334431; }
+  background-color: #fff;
+  color: #373737; }
 
 footer {
   clear: both;
   margin: auto;
   margin-top: 10px;
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  border-radius: 3px; }
 
 footer p {
   margin: 0;
-  color: white; }
+  color: #373737; }
 
 footer a:link {
   text-decoration: none;
-  color: #334431;
-  font-size: 1.3em;
+  background-color: #fff;
+  color: #373737;
+  font-size: 1.5em;
   font-weight: bolder; }
 
 footer a:visited {
@@ -119,7 +177,21 @@ footer a:visited {
 
 /********************** Responsive Design  **********************/
 @media only screen and (min-width: 550px) {
+  .header {
+    font-size: 4em; }
+
+  .container {
+    flex-direction: row;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px; }
+
+  .container a {
+    margin: 25px 10px;
+    width: 45%; }
+
   .nav-links {
+    margin-top: 10px;
     width: 90%; }
 
   .quote-container {
@@ -138,6 +210,18 @@ footer a:visited {
 
   .nav-links a {
     margin: 3px 3px; }
+
+  .container {
+    flex-direction: row;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.7); }
+
+  .container a {
+    margin: 15px 15px;
+    width: 16%; }
+
+  .container a:hover {
+    width: 20%; }
 
   .quote-container {
     width: 50%; } }

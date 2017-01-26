@@ -7,7 +7,7 @@ books:[
 [<p>Terror made me cruel.</p>,<span>Emily Bronte, Wuthering Heights (1847)</span>],
 [<p>Some men get the world, some men get ex-hookers and a trip to Arizona. You're in with the former, but my God I don't envy the blood on your conscience.</p>,<span>James Ellroy, L.A. Confidential (1990)</span>],
 [<p>It was a bright cold day in April, and the clocks were striking thirteen.</p>,<span>George Orwell, 1984 (1949)</span>],
-[<p>It;s much better to do good in a way that no one knows anything about it.</p>,<span>Leo Tolstoy, Anna Karenina (1877)</span>],
+[<p>It's much better to do good in a way that no one knows anything about it.</p>,<span>Leo Tolstoy, Anna Karenina (1877)</span>],
 [<p>Life appears to me too short to be spent in nursing animosity or registering wrongs.</p>,<span>Charlotte Bronte, Jane Eyre (1847)</span>],
 [<p>You forget what you want to remember, and you remember what you want to forget.</p>,<span>Cormac McCarthy, The Road (2006)</span>],
 [<p>There is an idea of a Patrick Bateman, some kind of abstraction, but there is no real me, only an entity, something illusory, and though I can hide my cold gaze and you can shake my hand and feel flesh gripping yours and maybe you can even sense our lifestyles are probably comparable: I simply am not there.</p>,<span>Bret Easton Ellis, American Psycho (1991)</span>],

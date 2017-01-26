@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './nav'
 import Arrays from './arrays';
+import Home from './home';
 
 let num=0;
 
@@ -9,12 +10,15 @@ class Quotes extends React.Component {
       super(props);
       this.state = { 
         num:0,
-        set:'books'
+        set:'books',
+        classHome:'show',
+        classQuotes:'hide'
       };
 
       this.handleClickNext = this.handleClickNext.bind(this);
       this.handleClickLast = this.handleClickLast.bind(this);
       this.changeArray = this.changeArray.bind(this);
+      this.alert = this.alert.bind(this);
 
       window.addEventListener('keydown', e => this.arrow(e));
     }
@@ -23,7 +27,7 @@ class Quotes extends React.Component {
     if( this.state.num > 0){
       this.setState({num:this.state.num-1});
     }else{
-      this.setState({num:Arrays[this.state.set].length-1});
+      this.setState({num:Arrays[this.state.set].length});
     }
   }
 
@@ -51,18 +55,32 @@ class Quotes extends React.Component {
     this.setState({set:e.target.innerHTML.toLowerCase()});
   }
 
+  alert(e){
+    if(this.state.classHome === 'show'){
+      this.setState({classHome:'hide'});
+      this.setState({classQuotes:'show'});
+      this.setState({set:e.target.id});
+    }else{
+      this.setState({classHome:'show'});
+      this.setState({classQuotes:'hide'});
+    }
+  }
+
   render() {
     return (
         <div>
-          <Nav selected={this.state.set} myFunc={this.changeArray.bind(this)} />
-          <div className="quote-container">
-            <div className="quote">
-              {Arrays[this.state.set][this.state.num][0]}
-              {Arrays[this.state.set][this.state.num][1]}
-            </div>
-            <div className="buttons">
-              <button className="left" onClick={this.handleClickLast} onKeyDown={this.arrowLeft}>Previous Quote<br/>(Or use left arrow key)</button>
-              <button className="right" onClick={this.handleClickNext} onKeyDown={this.arrowRight}>Next Quote<br/>(Or use right arrow key)</button>
+          <Home class={this.state.classHome} alert={this.alert}/>
+          <div className={this.state.classQuotes}>
+            <Nav selected={this.state.set} myFunc={this.changeArray.bind(this)} alert={this.alert} />
+            <div className="quote-container">
+              <div className="quote">
+                {Arrays[this.state.set][this.state.num][0]}
+                {Arrays[this.state.set][this.state.num][1]}
+              </div>
+              <div className="buttons">
+                <button className="left" onClick={this.handleClickLast} onKeyDown={this.arrowLeft}>Previous Quote<br/>(Or use left arrow key)</button>
+                <button className="right" onClick={this.handleClickNext} onKeyDown={this.arrowRight}>Next Quote<br/>(Or use right arrow key)</button>
+              </div>
             </div>
           </div>
         </div>

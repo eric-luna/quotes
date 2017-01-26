@@ -7,6 +7,7 @@ class Nav extends React.Component {
 		return (
 				<div className="nav-bar">
 					<div className="nav-links">
+						<a><li onClick={this.props.alert}>Home</li></a>
 						<a><li className={(this.props.selected === "books") ? "selected" : ""} onClick={this.props.myFunc}>Books</li></a>
 						<a><li className={(this.props.selected === "sports") ? "selected" : ""} onClick={this.props.myFunc}>Sports</li></a>
 						<a><li className={(this.props.selected === "science") ? "selected" : ""} onClick={this.props.myFunc}>Science</li></a>
